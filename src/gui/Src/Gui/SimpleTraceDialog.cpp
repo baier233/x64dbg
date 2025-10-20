@@ -21,7 +21,7 @@ SimpleTraceDialog::SimpleTraceDialog(QWidget* parent) :
     ui->editLogCondition->setPlaceholderText(tr("Example: %1").arg("eax == 0 && ebx == 0"));
     ui->editCommandText->setPlaceholderText(tr("Example: %1").arg("eax=4;StepOut"));
     ui->editCommandCondition->setPlaceholderText(tr("Example: %1").arg("eax == 0 && ebx == 0"));
-    ui->lblBreakCondition->setText(QString("<a href=\"https://help.x64dbg.com/en/latest/introduction/ConditionalTracing.html\">%1</a>:").arg(ui->lblBreakCondition->text().replace(":", "")));
+    ui->lblBreakCondition->setText(QString("<a href=\"https://help.MARENOL.com/en/latest/introduction/ConditionalTracing.html\">%1</a>:").arg(ui->lblBreakCondition->text().replace(":", "")));
 }
 
 SimpleTraceDialog::~SimpleTraceDialog()

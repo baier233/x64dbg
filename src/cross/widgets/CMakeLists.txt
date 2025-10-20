@@ -86,14 +86,14 @@ set(widgets_SOURCES
 
 include_directories(BEFORE ${CMAKE_CURRENT_SOURCE_DIR})
 
-add_library(x64dbg_widgets STATIC
+add_library(MARENOL_widgets STATIC
     ${hook_SOURCES}
     ${widgets_SOURCES}
     resources.qrc
 )
-add_library(x64dbg::widgets ALIAS x64dbg_widgets)
+add_library(MARENOL::widgets ALIAS MARENOL_widgets)
 
-target_include_directories(x64dbg_widgets PUBLIC
+target_include_directories(MARENOL_widgets PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${widgets_SOURCE_DIR}
 )
@@ -101,11 +101,11 @@ target_include_directories(x64dbg_widgets PUBLIC
 source_group(TREE ${widgets_SOURCE_DIR} FILES ${widgets_SOURCES})
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX hook FILES ${hook_SOURCES})
 
-target_compile_definitions(x64dbg_widgets PRIVATE
+target_compile_definitions(MARENOL_widgets PRIVATE
     QT_NO_DEPRECATED_WARNINGS
 )
 
-target_link_libraries(x64dbg_widgets PUBLIC
+target_link_libraries(MARENOL_widgets PUBLIC
     ${QT_LIBRARIES}
     zydis_wrapper
     md4c-html

@@ -1,6 +1,6 @@
 # Glossary
 
-This section describes various terms and concepts used by x64dbg.
+This section describes various terms and concepts used by MARENOL.
 
 -  **Breakpoint** A breakpoint defines a condition when the debuggee should be paused. There are 5 types of breakpoint, namely software breakpoint, hardware breakpoint, memory breakpoint, DLL breakpoint and exception breakpoint.
 -  **Conditional Breakpoint** A conditional breakpoint lets you define some simple operations that executes automatically when the breakpoint is hit, and then conditionally resumes program execution. See [documentation for conditional breakpoint](./ConditionalBreakpoint.md) for more information.

@@ -1,6 +1,6 @@
 Debug Functions 
 ===============
-This section contains information about debug functions of x64dbg.
+This section contains information about debug functions of MARENOL.
 
 **Contents:**
 

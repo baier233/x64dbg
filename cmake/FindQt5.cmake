@@ -23,12 +23,12 @@ if(Qt5_FIND_REQUIRED AND MSVC)
     set(FETCHCONTENT_QUIET OFF)
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
         FetchContent_Declare(Qt5
-            URL "https://github.com/x64dbg/deps/releases/download/2025.07.02/qt5.12.12-msvc2017_64.7z"
+            URL "https://github.com/MARENOL/deps/releases/download/2025.07.02/qt5.12.12-msvc2017_64.7z"
             URL_HASH SHA256=770490bf09514982c8192ebde9a1fac8821108ba42b021f167bac54e85ada48a
         )
     else()
         FetchContent_Declare(Qt5
-            URL "https://github.com/x64dbg/deps/releases/download/2025.07.02/qt5.12.12-msvc2017.7z"
+            URL "https://github.com/MARENOL/deps/releases/download/2025.07.02/qt5.12.12-msvc2017.7z"
             URL_HASH SHA256=3ff2a58e5ed772be475643cd7bb2df3e5499d7169d794ddf1ed5df5c5e862cb6
         )
     endif()

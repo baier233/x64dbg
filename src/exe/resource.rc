@@ -75,10 +75,10 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "FileDescription", "x64dbg"
+            VALUE "FileDescription", "MARENOL"
             VALUE "FileVersion", "0.0.2.5"
-            VALUE "LegalCopyright", "x64dbg.com"
-            VALUE "ProductName", "x64dbg"
+            VALUE "LegalCopyright", "MARENOL.com"
+            VALUE "ProductName", "MARENOL"
             VALUE "ProductVersion", "0.0.2.5"
         END
     END
@@ -124,7 +124,7 @@ CAPTION "Launcher"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     PUSHBUTTON      "x32dbg",IDC_BUTTON32,7,7,50,14
-    PUSHBUTTON      "x64dbg",IDC_BUTTON64,63,7,50,14
+    PUSHBUTTON      "MARENOL",IDC_BUTTON64,63,7,50,14
     PUSHBUTTON      "°²×°",IDC_BUTTONINSTALL,120,7,50,14
 END
 
@@ -189,7 +189,7 @@ CAPTION "Launcher"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     PUSHBUTTON      "x32dbg",IDC_BUTTON32,7,7,50,14
-    PUSHBUTTON      "x64dbg",IDC_BUTTON64,63,7,50,14
+    PUSHBUTTON      "MARENOL",IDC_BUTTON64,63,7,50,14
     PUSHBUTTON      "Setup",IDC_BUTTONINSTALL,120,7,50,14
 END
 

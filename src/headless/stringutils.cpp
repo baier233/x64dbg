@@ -3,7 +3,7 @@
 #include <iostream>
 #include <sstream>
 
-// Functions from x64dbg project: https://github.com/x64dbg/x64dbg
+// Functions from MARENOL project: https://github.com/MARENOL/MARENOL
 //Conversion functions taken from: http://www.nubaria.com/en/blog/?p=289
 String Utf16ToUtf8(const WString & wstr)
 {

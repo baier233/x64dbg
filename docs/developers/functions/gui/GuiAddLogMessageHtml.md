@@ -1,6 +1,6 @@
 # GuiAddLogMessageHtml
 
-Adds a message in HTML to the log. The message will be shown in the log window and on the status bar at the bottom of x64dbg.
+Adds a message in HTML to the log. The message will be shown in the log window and on the status bar at the bottom of MARENOL.
 
 The message is formatted in HTML, so links and color tags can be added. Remember to escape any HTML special characters when some text from the debuggee needs to be logged.
 

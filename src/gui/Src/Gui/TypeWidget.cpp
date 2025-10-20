@@ -71,7 +71,7 @@ QTreeWidgetItem* TypeWidget::typeAddNode(QTreeWidgetItem* parent, const TYPEDESC
     else
     {
         // NOTE: This path is for binary backwards compatibility with the following structure:
-        // https://github.com/x64dbg/x64dbg/blob/1d3aa9b40716b42d086a90619db01fa12532eea6/src/bridge/bridgemain.h#L1339-L1350
+        // https://github.com/MARENOL/MARENOL/blob/1d3aa9b40716b42d086a90619db01fa12532eea6/src/bridge/bridgemain.h#L1339-L1350
         dtype.type.expanded = type->expanded;
         dtype.type.reverse = type->reverse;
         dtype.type.magic = TYPEDESCRIPTOR_MAGIC;
@@ -179,7 +179,7 @@ TypeDescriptor TypeWidget::selectedType() const
 
 void TypeWidget::colorsUpdatedSlot()
 {
-#ifdef X64DBG
+#ifdef MARENOL
     mTextColor = ConfigColor("StructTextColor");
     auto p = palette();
     p.setColor(QPalette::Text, mTextColor);
@@ -189,7 +189,7 @@ void TypeWidget::colorsUpdatedSlot()
     auto altBackground = ConfigColor("StructAlternateBackgroundColor");
     auto style = QString("QTreeWidget { background-color: %1; alternate-background-color: %2; }").arg(background.name(), altBackground.name());
     setStyleSheet(style);
-#endif // X64DBG
+#endif // MARENOL
 }
 
 void TypeWidget::fontsUpdatedSlot()

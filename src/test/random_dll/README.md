@@ -2,14 +2,14 @@
 
 ## Purpose
 
-This test case demonstrates the scenario described in the x64dbg feature request for wildcard DLL breakpoints. It simulates a process that generates and loads DLLs with random names at runtime, specifically using the `.xxl` extension as mentioned in the issue.
+This test case demonstrates the scenario described in the MARENOL feature request for wildcard DLL breakpoints. It simulates a process that generates and loads DLLs with random names at runtime, specifically using the `.xxl` extension as mentioned in the issue.
 
 ## Problem Statement
 
 The original issue described:
 - Process generates a DLL at runtime with random names like `tuavp.xxl` in the %TEMP% directory
 - Second run generates a different random name like `hpsk.xxl`
-- User wants x64dbg to break on every `.xxl` load using wildcard patterns
+- User wants MARENOL to break on every `.xxl` load using wildcard patterns
 
 ## Test Case Components
 
@@ -38,9 +38,9 @@ The original issue described:
 1. Configure the project: `cmake -B build`
 2. Build the project `cmake --build build --config Release`
 
-### Testing with x64dbg
+### Testing with MARENOL
 
-- Load the `build/Release/random_dll_test.exe` in x64dbg
+- Load the `build/Release/random_dll_test.exe` in MARENOL
 - Run to the entry point
 - Set a breakpoint on `LoadLibraryExW`
   - Break condition: `0`

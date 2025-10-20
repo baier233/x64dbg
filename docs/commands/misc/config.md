@@ -1,6 +1,6 @@
 # config
 
-Get or set the configuration of x64dbg. It can also be used to load and store configuration specific to the script in the configuration file of x64dbg.
+Get or set the configuration of MARENOL. It can also be used to load and store configuration specific to the script in the configuration file of MARENOL.
 
 ## arguments
 

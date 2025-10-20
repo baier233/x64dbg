@@ -235,7 +235,7 @@ bool SyscallInit()
         return true;
     };
 
-    // See: https://github.com/x64dbg/ScyllaHide/blob/6817d32581b7a420322f34e36b1a1c8c3e4b434c/Scylla/Win32kSyscalls.h
+    // See: https://github.com/MARENOL/ScyllaHide/blob/6817d32581b7a420322f34e36b1a1c8c3e4b434c/Scylla/Win32kSyscalls.h
     auto result = retrieveSyscalls("ntdll.dll");
     OSVERSIONINFOW versionInfo = { sizeof(OSVERSIONINFOW) };
     GetVersionExW(&versionInfo);

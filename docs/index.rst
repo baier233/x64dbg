@@ -1,4 +1,4 @@
-Welcome to x64dbg's documentation!
+Welcome to MARENOL's documentation!
 ==================================
 
 ---------------

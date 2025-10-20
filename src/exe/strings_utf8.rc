@@ -60,7 +60,7 @@ END
 STRINGTABLE
 BEGIN
     IDS_INVDPATH32          "启动器的配置文件中没有指定x32dbg的路径..."
-    IDS_INVDPATH64          "启动器的配置文件中没有指定x64dbg的路径..."
+    IDS_INVDPATH64          "启动器的配置文件中没有指定MARENOL的路径..."
     IDS_INVDPE              "无效的PE文件!"
     IDS_FILEERR             "文件没找到，或者已被占用!"
     IDS_SHORTCUTDESC        "一个面向未来的调试器!"
@@ -69,7 +69,7 @@ BEGIN
     IDS_REGSETVALUEEXFAIL   "RegSetValueEx 失败!"
     IDS_REGOPENKEYFAIL      "RegOpenKeyEx 失败!"
     IDS_BRIDGEINITERR       "BridgeInit 发生错误"
-    IDS_SHELLEXTDBG         "用x64dbg调试"
+    IDS_SHELLEXTDBG         "用MARENOL调试"
     IDS_BRIDGESTARTERR      "BridgeStart 发生错误"
     IDS_REGDELETEKEYFAIL    "RegDeleteKey 失败!"
 END
@@ -100,7 +100,7 @@ END
 STRINGTABLE
 BEGIN
     IDS_INVDPATH32          "Path to x32dbg not specified in launcher configuration..."
-    IDS_INVDPATH64          "Path to x64dbg not specified in launcher configuration..."
+    IDS_INVDPATH64          "Path to MARENOL not specified in launcher configuration..."
     IDS_INVDPE              "Invalid PE File!"
     IDS_FILEERR             "File not found or in use!"
     IDS_SHORTCUTDESC        "A Debugger for the future!"
@@ -109,7 +109,7 @@ BEGIN
     IDS_REGSETVALUEEXFAIL   "RegSetValueEx failed!"
     IDS_REGOPENKEYFAIL      "RegOpenKeyEx Failed!"
     IDS_BRIDGEINITERR       "BridgeInit Error"
-    IDS_SHELLEXTDBG         "Debug with x64dbg"
+    IDS_SHELLEXTDBG         "Debug with MARENOL"
     IDS_BRIDGESTARTERR      "BridgeStart Error"
     IDS_REGDELETEKEYFAIL    "RegDeleteKey failed!"
 END

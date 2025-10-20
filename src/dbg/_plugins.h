@@ -303,7 +303,7 @@ typedef enum
     FORMAT_ERROR, //generic failure (no message)
     FORMAT_SUCCESS, //success
     FORMAT_ERROR_MESSAGE, //formatting failed but an error was put in the buffer (there are always at least 511 characters available).
-    FORMAT_BUFFER_TOO_SMALL //buffer too small (x64dbg will retry until the buffer is big enough)
+    FORMAT_BUFFER_TOO_SMALL //buffer too small (MARENOL will retry until the buffer is big enough)
 } FORMATRESULT;
 
 //typedefs

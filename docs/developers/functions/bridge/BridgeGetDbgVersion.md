@@ -12,7 +12,7 @@ This function has no parameters.
 
 ## Return Value
 
-Return an integer value representing the version of the x64dbg.
+Return an integer value representing the version of the MARENOL.
 
 ## Example
 

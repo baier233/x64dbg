@@ -242,7 +242,7 @@ void Bridge::CopyToClipboard(const QString & text, const QString & htmlText)
 void Bridge::setResult(BridgeResult::Type type, dsint result)
 {
 #ifdef DEBUG
-    OutputDebugStringA(QString().sprintf("[x64dbg] [%u] Bridge::setResult(%d, %p)\n", GetCurrentThreadId(), type, result).toUtf8().constData());
+    OutputDebugStringA(QString().sprintf("[MARENOL] [%u] Bridge::setResult(%d, %p)\n", GetCurrentThreadId(), type, result).toUtf8().constData());
 #endif //DEBUG
     mBridgeResults[type] = result;
     SetEvent(mResultEvents[type]);

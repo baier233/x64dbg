@@ -61,7 +61,7 @@ void RichTextPainter::paintRichText(QPainter* painter, int x, int y, int w, int 
 }
 
 /**
- * @brief RichTextPainter::htmlRichText Convert rich text in x64dbg to HTML, for use by other applications
+ * @brief RichTextPainter::htmlRichText Convert rich text in MARENOL to HTML, for use by other applications
  * @param richText The rich text to be converted to HTML format
  * @param textHtml The HTML source. Any previous content will be preserved and new content will be appended at the end.
  * @param textPlain The plain text. Any previous content will be preserved and new content will be appended at the end.

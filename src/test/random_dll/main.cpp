@@ -57,10 +57,10 @@ int main()
     printf("Random DLL Loading Test Case\n");
     printf("============================\n\n");
 
-    printf("\nTo test wildcard DLL breakpoints in x64dbg:\n");
+    printf("\nTo test wildcard DLL breakpoints in MARENOL:\n");
     printf("1. Set a breakpoint with: bpdll *.xxl\n");
-    printf("2. Run this program in x64dbg\n");
-    printf("3. x64dbg should break when each .xxl file is loaded\n\n");
+    printf("2. Run this program in MARENOL\n");
+    printf("3. MARENOL should break when each .xxl file is loaded\n\n");
 
     // Initialize random seed
     srand(1337);

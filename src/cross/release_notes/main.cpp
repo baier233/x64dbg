@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
 
     QApplication a(argc, argv);
     ReleaseNotesDialog d({});
-    if(!d.setMarkdown(QString::fromUtf8(markdown), "https://github.com/x64dbg/x64dbg/issues/"))
+    if(!d.setMarkdown(QString::fromUtf8(markdown), "https://github.com/MARENOL/MARENOL/issues/"))
     {
         puts("Failed to convert markdown!");
     }

@@ -1,6 +1,6 @@
 # GuiUpdateWindowTitle
 
-Updates the x64dbg window title with a string to be appended to the title text. Typically the string is a filename.
+Updates the MARENOL window title with a string to be appended to the title text. Typically the string is a filename.
 
 ```c++
 void GuiUpdateWindowTitle(const char* filename)
@@ -8,7 +8,7 @@ void GuiUpdateWindowTitle(const char* filename)
 
 ## Parameters
 
-`filename` a const char variable to be appended to the x64dbg title bar.
+`filename` a const char variable to be appended to the MARENOL title bar.
 
 ## Return Value
 

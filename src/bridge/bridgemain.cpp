@@ -25,7 +25,7 @@ static bool bDisableGUIUpdate;
         return;
 
 #ifdef _WIN64
-#define dbg_lib L"x64dbg.dll"
+#define dbg_lib L"MARENOL.dll"
 #define gui_lib L"x64gui.dll"
 #else
 #define dbg_lib L"x32dbg.dll"
@@ -86,7 +86,7 @@ static const wchar_t* InitializeUserDirectory(HINSTANCE hMainModule, const wchar
     // Set the current directory to the application directory
     SetCurrentDirectoryW(szUserDirectory);
 
-    // Extract the file name of the x64dbg executable (without extension)
+    // Extract the file name of the MARENOL executable (without extension)
     auto fileNameWithoutExtension = backslash + 1;
     auto period = wcschr(fileNameWithoutExtension, L'.');
     if(period != nullptr)

@@ -42,7 +42,7 @@ file(COPY ${PLUGIN_HEADERS} DESTINATION "${PLUGINSDK_DIR}")
 file(COPY "${ROOT_DIR}/bin/x32/x32bridge.lib" DESTINATION "${PLUGINSDK_DIR}")
 file(COPY "${ROOT_DIR}/bin/x32/x32dbg.lib" DESTINATION "${PLUGINSDK_DIR}")
 file(COPY "${ROOT_DIR}/bin/x64/x64bridge.lib" DESTINATION "${PLUGINSDK_DIR}")
-file(COPY "${ROOT_DIR}/bin/x64/x64dbg.lib" DESTINATION "${PLUGINSDK_DIR}")
+file(COPY "${ROOT_DIR}/bin/x64/MARENOL.lib" DESTINATION "${PLUGINSDK_DIR}")
 
 # Copy release files
 set(RELEASE_MAIN_DIR "${RELEASE_DIR}/release")
@@ -87,8 +87,8 @@ file(COPY "${ROOT_DIR}/bin/x32/loaddll.exe" DESTINATION "${RELEASE_MAIN_DIR}/x32
 
 # Copy x64 files
 file(COPY "${ROOT_DIR}/bin/x64/x64bridge.dll" DESTINATION "${RELEASE_MAIN_DIR}/x64")
-file(COPY "${ROOT_DIR}/bin/x64/x64dbg.dll" DESTINATION "${RELEASE_MAIN_DIR}/x64")
-file(COPY "${ROOT_DIR}/bin/x64/x64dbg.exe" DESTINATION "${RELEASE_MAIN_DIR}/x64")
+file(COPY "${ROOT_DIR}/bin/x64/MARENOL.dll" DESTINATION "${RELEASE_MAIN_DIR}/x64")
+file(COPY "${ROOT_DIR}/bin/x64/MARENOL.exe" DESTINATION "${RELEASE_MAIN_DIR}/x64")
 file(COPY "${ROOT_DIR}/bin/x64/x64gui.dll" DESTINATION "${RELEASE_MAIN_DIR}/x64")
 file(COPY "${ROOT_DIR}/bin/x64/loaddll.exe" DESTINATION "${RELEASE_MAIN_DIR}/x64")
 

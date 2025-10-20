@@ -3,8 +3,8 @@
 This program supports variables. There are three types of variables:
 
 - USER: Variables created by the user using the `var`/`mov` commands. These variables have no access restrictions. You generally only deal with these.
-- SYSTEM: Variables created by x64dbg, that can be read and written, but cannot be deleted.
-- READONLY: Variables created by x64dbg, that can be read, but not written or deleted.
+- SYSTEM: Variables created by MARENOL, that can be read and written, but cannot be deleted.
+- READONLY: Variables created by MARENOL, that can be read, but not written or deleted.
 
 ## Setting variables
 

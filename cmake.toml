@@ -3,14 +3,14 @@ version = "3.15"
 cmkr-include = "cmake/cmkr.cmake"
 
 [options]
-X64DBG_BUILD_IN_TREE = true
-X64DBG_RELEASE = false
+MARENOL_BUILD_IN_TREE = true
+MARENOL_RELEASE = false
 
 [variables]
 CMAKE_MODULE_PATH = "${CMAKE_SOURCE_DIR}/cmake"
 
 [project]
-name = "x64dbg"
+name = "MARENOL"
 description = "An open-source x64/x32 debugger for windows."
 msvc-runtime = "dynamic"
 include-before = [
@@ -130,7 +130,7 @@ msvc.link-libraries = [
 
 [target.dbg.properties]
 x86.OUTPUT_NAME = "x32dbg"
-x64.OUTPUT_NAME = "x64dbg"
+x64.OUTPUT_NAME = "MARENOL"
 
 [target.gui]
 type = "shared"
@@ -170,9 +170,9 @@ private-include-directories = [
 private-compile-definitions = [
     "BUILD_LIB",
     "NOMINMAX",
-    "X64DBG",
+    "MARENOL",
 ]
-X64DBG_RELEASE.compile-definitions = ["X64DBG_RELEASE"]
+MARENOL_RELEASE.compile-definitions = ["MARENOL_RELEASE"]
 include-after = ["cmake/deps.cmake"]
 
 [target.gui.properties]
@@ -238,9 +238,9 @@ add_dependencies(exe dbg gui loaddll deps)
 
 [target.exe.properties]
 x86.OUTPUT_NAME = "x32dbg"
-x64.OUTPUT_NAME = "x64dbg"
+x64.OUTPUT_NAME = "MARENOL"
 x86.PDB_NAME = "x32dbg_exe"
-x64.PDB_NAME = "x64dbg_exe"
+x64.PDB_NAME = "MARENOL_exe"
 WIN32_EXECUTABLE = "ON"
 
 [target.headless]
@@ -276,4 +276,4 @@ cmake-after = "add_dependencies(exe launcher)"
 [target.launcher.properties]
 OUTPUT_NAME = "x96dbg"
 WIN32_EXECUTABLE = "ON"
-X64DBG_BUILD_IN_TREE.RUNTIME_OUTPUT_DIRECTORY = "${PROJECT_SOURCE_DIR}/bin"
+MARENOL_BUILD_IN_TREE.RUNTIME_OUTPUT_DIRECTORY = "${PROJECT_SOURCE_DIR}/bin"

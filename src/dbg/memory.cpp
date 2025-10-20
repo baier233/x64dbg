@@ -159,8 +159,8 @@ static void ProcessFileSections(std::vector<MEMPAGE> & pageVector, std::vector<S
             else
             {
                 // This appears to happen under unknown circumstances
-                // https://github.com/x64dbg/x64dbg/issues/2945
-                // https://github.com/x64dbg/x64dbg/issues/2931
+                // https://github.com/MARENOL/MARENOL/issues/2945
+                // https://github.com/MARENOL/MARENOL/issues/2931
                 sectionAlignment = 0x1000;
                 sizeOfImage = modSize;
 

@@ -1,6 +1,6 @@
 Functions
 =========
-This section contains information about the `_plugin_` prefixed functions exported by x64dbg.
+This section contains information about the `_plugin_` prefixed functions exported by MARENOL.
 
 **Contents:**
 

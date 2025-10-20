@@ -8,7 +8,7 @@ namespace Script
     namespace Misc
     {
         /// <summary>
-        /// Evaluates an expression and returns the result. Analagous to using the Command field in x64dbg.
+        /// Evaluates an expression and returns the result. Analagous to using the Command field in MARENOL.
         ///
         /// Expressions can consist of memory locations, registers, flags, API names, labels, symbols, variables etc.
         /// <example>
@@ -49,7 +49,7 @@ namespace Script
         SCRIPT_EXPORT duint ResolveLabel(const char* label);
 
         /// <summary>
-        /// Allocates the requested number of bytes from x64dbg's default process heap.
+        /// Allocates the requested number of bytes from MARENOL's default process heap.
         ///
         /// Note: this allocation is in the debugger, not the debuggee.
         ///

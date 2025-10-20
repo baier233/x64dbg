@@ -419,7 +419,7 @@ bool cbInstrEnumTypes(int argc, char* argv[])
     for(auto & type : typeList)
     {
         if(type.owner.empty())
-            type.owner.assign("x64dbg");
+            type.owner.assign("MARENOL");
         dprintf_untranslated("%s: %s %s, sizeof(%s) = %d\n", type.owner.c_str(), type.kind.c_str(), type.name.c_str(), type.name.c_str(), type.size);
     }
     return true;

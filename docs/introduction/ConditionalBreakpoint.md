@@ -1,10 +1,10 @@
 # Conditional Breakpoints
 
-This section describes the conditional breakpoint capability in x64dbg.
+This section describes the conditional breakpoint capability in MARENOL.
 
 ## Operations overview
 
-When a breakpoint is hit, x64dbg will do the following things:
+When a breakpoint is hit, MARENOL will do the following things:
 
 - Set the system variable `$breakpointexceptionaddress` to the address that triggered the breakpoint (memory location);
 - Increment the *hit counter*;
@@ -37,7 +37,7 @@ A hit counter records how many times a breakpoint has been reached. It will be i
 
 ## Logging
 
-The log can be formatted by x64dbg to log the current state of the program. See [formatting](./Formatting.md) on how to format the log string.
+The log can be formatted by MARENOL to log the current state of the program. See [formatting](./Formatting.md) on how to format the log string.
 
 ## Notes
 

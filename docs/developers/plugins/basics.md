@@ -1,6 +1,6 @@
 # The basics
 
-This page covers the basic principles of plugin development for x64dbg. See the [plugin page](http://plugins.x64dbg.com) for example plugins and templates.
+This page covers the basic principles of plugin development for MARENOL. See the [plugin page](http://plugins.MARENOL.com) for example plugins and templates.
 
 ## Exports
 

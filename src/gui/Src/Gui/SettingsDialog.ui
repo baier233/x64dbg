@@ -971,7 +971,7 @@
        <item>
         <widget class="QCheckBox" name="chkQtHighDpiScaling">
          <property name="toolTip">
-          <string>Disabling this option will tell Windows that x64dbg is DPI unaware. This might result in blurry results in some configurations.</string>
+          <string>Disabling this option will tell Windows that MARENOL is DPI unaware. This might result in blurry results in some configurations.</string>
          </property>
          <property name="text">
           <string>Qt High DPI Scaling</string>
@@ -1065,7 +1065,7 @@
          <item>
           <widget class="QCheckBox" name="chkSetJIT">
            <property name="text">
-            <string>Set x64dbg as Just In Time Debugger</string>
+            <string>Set MARENOL as Just In Time Debugger</string>
            </property>
           </widget>
          </item>
@@ -1121,7 +1121,7 @@
        <item>
         <widget class="QCheckBox" name="chkUseLocalHelpFile">
          <property name="text">
-          <string>Use local help file (x64dbg.chm)</string>
+          <string>Use local help file (MARENOL.chm)</string>
          </property>
         </widget>
        </item>

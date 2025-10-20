@@ -1,6 +1,6 @@
 # Other settings
 
-These settings do not appear in settings dialog, nor can they be changed in x64dbg GUI elsewhere, but can be modified by editing the INI configuration file.
+These settings do not appear in settings dialog, nor can they be changed in MARENOL GUI elsewhere, but can be modified by editing the INI configuration file.
 
 ## Engine
 ### AnimateInterval

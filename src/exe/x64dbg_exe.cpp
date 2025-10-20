@@ -1,5 +1,5 @@
 /**
- @file x64dbg_exe.cpp
+ @file MARENOL_exe.cpp
 
  @brief Implements the 64 debug executable class.
  */

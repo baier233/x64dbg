@@ -502,7 +502,7 @@ static bool cbRefFind(Zydis* disasm, BASIC_INSTRUCTION_INFO* basicinfo, REFINFO*
         duint value = basicinfo->value.value;
         if(value >= start && value <= end)
             found = true;
-        // Workaround for sign-extended values, see: https://github.com/x64dbg/x64dbg/issues/2824
+        // Workaround for sign-extended values, see: https://github.com/MARENOL/MARENOL/issues/2824
         if((value & ArchValue(0x80000000, 0x800000000000)) != 0)
         {
             switch(basicinfo->value.size)

@@ -1,6 +1,6 @@
 # String Formatting
 
-This section explains the simple string formatter built into x64dbg.
+This section explains the simple string formatter built into MARENOL.
 
 The basic syntax is `{?:expression}` where `?` is the optional type of the [expression](./Expressions.md). To output `{` or `}` in the result, escape them as `{{` or `}}`.
 
@@ -47,7 +47,7 @@ The basic syntax is `{?:expression}` where `?` is the optional type of the [expr
 
 ## Logging
 
-When using the `log` command you should put quotes around the format string (`log "{mem;8@rax}"`) to avoid ambiguity with the `;` (which separates two commands). See [issue #1931](https://github.com/x64dbg/x64dbg/issues/1931) for more details.
+When using the `log` command you should put quotes around the format string (`log "{mem;8@rax}"`) to avoid ambiguity with the `;` (which separates two commands). See [issue #1931](https://github.com/MARENOL/MARENOL/issues/1931) for more details.
 
 ## Plugins
 

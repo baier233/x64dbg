@@ -54,7 +54,7 @@ bool IsArgumentsLessThan(int argc, int minimumCount)
 {
     if(argc < minimumCount)
     {
-        dprintf_html(QT_TRANSLATE_NOOP("DBG", "Not enough arguments! At least %d argument(s) must be specified. Arguments are <a href=\"https://help.x64dbg.com/en/latest/commands/index.html\">comma-separated</a>.\n"), minimumCount - 1);
+        dprintf_html(QT_TRANSLATE_NOOP("DBG", "Not enough arguments! At least %d argument(s) must be specified. Arguments are <a href=\"https://help.MARENOL.com/en/latest/commands/index.html\">comma-separated</a>.\n"), minimumCount - 1);
         return true;
     }
     return false;
@@ -271,7 +271,7 @@ static bool cmdexeccallback(COMMAND* cmd, const std::string & command)
     return res;
 }
 
-// Defined in x64dbg.cpp
+// Defined in MARENOL.cpp
 bool cbCommandProvider(char* cmd, int maxlen);
 
 /**

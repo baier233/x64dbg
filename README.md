@@ -1,12 +1,12 @@
-# x64dbg
+# MARENOL
 
-<img width="100" src="https://github.com/x64dbg/x64dbg/raw/development/src/bug_black.png"/>
+<img width="100" src="https://github.com/MARENOL/MARENOL/raw/development/src/bug_black.png"/>
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/x64dbg/localized.svg)](https://translate.x64dbg.com) [![Download x64dbg](https://img.shields.io/sourceforge/dm/x64dbg.svg)](https://sourceforge.net/projects/x64dbg/files/latest/download) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/x64dbg/x64dbg)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/MARENOL/localized.svg)](https://translate.MARENOL.com) [![Download MARENOL](https://img.shields.io/sourceforge/dm/MARENOL.svg)](https://sourceforge.net/projects/MARENOL/files/latest/download) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MARENOL/MARENOL)
 
-[![Discord](https://img.shields.io/badge/chat-on%20Discord-green.svg)](https://discord.x64dbg.com) [![Slack](https://img.shields.io/badge/chat-on%20Slack-red.svg)](https://slack.x64dbg.com) [![Gitter](https://img.shields.io/badge/chat-on%20Gitter-lightseagreen.svg)](https://gitter.im/x64dbg/x64dbg) [![Matrix](https://img.shields.io/badge/chat-on%20Matrix-yellowgreen.svg)](https://riot.im/app/#/room/#x64dbg:matrix.org) [![IRC](https://img.shields.io/badge/chat-on%20IRC-purple.svg)](https://web.libera.chat/#x64dbg)
+[![Discord](https://img.shields.io/badge/chat-on%20Discord-green.svg)](https://discord.MARENOL.com) [![Slack](https://img.shields.io/badge/chat-on%20Slack-red.svg)](https://slack.MARENOL.com) [![Gitter](https://img.shields.io/badge/chat-on%20Gitter-lightseagreen.svg)](https://gitter.im/MARENOL/MARENOL) [![Matrix](https://img.shields.io/badge/chat-on%20Matrix-yellowgreen.svg)](https://riot.im/app/#/room/#MARENOL:matrix.org) [![IRC](https://img.shields.io/badge/chat-on%20IRC-purple.svg)](https://web.libera.chat/#MARENOL)
 
-An open-source binary debugger for Windows, aimed at malware analysis and reverse engineering of executables you do not have the source code for. There are many features available and a comprehensive [plugin system](https://plugins.x64dbg.com) to add your own. You can find more information on the [blog](https://x64dbg.com/blog)!
+An open-source binary debugger for Windows, aimed at malware analysis and reverse engineering of executables you do not have the source code for. There are many features available and a comprehensive [plugin system](https://plugins.MARENOL.com) to add your own. You can find more information on the [blog](https://MARENOL.com/blog)!
 
 ## Screenshots
 
@@ -19,29 +19,29 @@ An open-source binary debugger for Windows, aimed at malware analysis and revers
 
 ## Installation & Usage
 
-1. Download a snapshot from [GitHub](https://github.com/x64dbg/x64dbg/releases), [SourceForge](https://sourceforge.net/projects/x64dbg/files/snapshots) or [OSDN](https://osdn.net/projects/x64dbg) and extract it in a location your user has write access to.
+1. Download a snapshot from [GitHub](https://github.com/MARENOL/MARENOL/releases), [SourceForge](https://sourceforge.net/projects/MARENOL/files/snapshots) or [OSDN](https://osdn.net/projects/MARENOL) and extract it in a location your user has write access to.
 2. _Optionally_ use `x96dbg.exe` to register a shell extension and add shortcuts to your desktop.
-3. You can now run `x32\x32dbg.exe` if you want to debug a 32-bit executable or `x64\x64dbg.exe` to debug a 64-bit executable! If you are unsure you can always run `x96dbg.exe` and choose your architecture there.
+3. You can now run `x32\x32dbg.exe` if you want to debug a 32-bit executable or `x64\MARENOL.exe` to debug a 64-bit executable! If you are unsure you can always run `x96dbg.exe` and choose your architecture there.
 
-You can also [compile](https://github.com/x64dbg/x64dbg/wiki/Compiling-the-whole-project) x64dbg yourself with a few easy steps!
+You can also [compile](https://github.com/MARENOL/MARENOL/wiki/Compiling-the-whole-project) MARENOL yourself with a few easy steps!
 
 ## Sponsors
 
-[![](.github/sponsors/malcore.png)](https://sponsors.x64dbg.com/malcore)
+[![](.github/sponsors/malcore.png)](https://sponsors.MARENOL.com/malcore)
 
 <br>
 
-[![](.github/sponsors/telekom.svg)](https://sponsors.x64dbg.com/telekom)
+[![](.github/sponsors/telekom.svg)](https://sponsors.MARENOL.com/telekom)
 
 ## Contributing
 
-This is a community effort and we accept pull requests! See the [CONTRIBUTING](.github/CONTRIBUTING.md) document for more information. If you have any questions you can always [contact us](https://x64dbg.com/#contact) or open an [issue](https://github.com/x64dbg/x64dbg/issues). You can take a look at the [good first issues](https://easy.x64dbg.com/) to get started.
+This is a community effort and we accept pull requests! See the [CONTRIBUTING](.github/CONTRIBUTING.md) document for more information. If you have any questions you can always [contact us](https://MARENOL.com/#contact) or open an [issue](https://github.com/MARENOL/MARENOL/issues). You can take a look at the [good first issues](https://easy.MARENOL.com/) to get started.
 
 ## Credits
 
-- Debugger core by [TitanEngine Community Edition](https://github.com/x64dbg/TitanEngine)
+- Debugger core by [TitanEngine Community Edition](https://github.com/MARENOL/TitanEngine)
 - Disassembly powered by [Zydis](https://zydis.re)
-- Assembly powered by [XEDParse](https://github.com/x64dbg/XEDParse) and [asmjit](https://github.com/asmjit)
+- Assembly powered by [XEDParse](https://github.com/MARENOL/XEDParse) and [asmjit](https://github.com/asmjit)
 - Import reconstruction powered by [Scylla](https://github.com/NtQuery/Scylla)
 - JSON powered by [Jansson](https://www.digip.org/jansson)
 - Database compression powered by [lz4](https://bitbucket.org/mrexodia/lz4)
@@ -61,7 +61,7 @@ This is a community effort and we accept pull requests! See the [CONTRIBUTING](.
 
 ## Code contributions
 
-You can find an exhaustive list of GitHub contributors [here](https://github.com/x64dbg/x64dbg/graphs/contributors).
+You can find an exhaustive list of GitHub contributors [here](https://github.com/MARENOL/MARENOL/graphs/contributors).
 
 ## Special Thanks
 
@@ -69,7 +69,7 @@ You can find an exhaustive list of GitHub contributors [here](https://github.com
 - All the donators!
 - Everybody adding issues!
 - People I forgot to add to this list
-- [Writers of the blog](https://x64dbg.com/blog/2016/07/09/Looking-for-writers.html)!
+- [Writers of the blog](https://MARENOL.com/blog/2016/07/09/Looking-for-writers.html)!
 - [EXETools community](https://forum.exetools.com)
 - [Tuts4You community](https://forum.tuts4you.com)
 - [ReSharper](https://www.jetbrains.com/resharper)
@@ -92,4 +92,4 @@ You can find an exhaustive list of GitHub contributors [here](https://github.com
 - [mrfearless](https://twitter.com/fearless0)
 - [JustMagic](https://github.com/JustasMasiulis)
 
-Without the help of many people and other open-source projects, it would not have been possible to make x64dbg what it is today, thank you!
+Without the help of many people and other open-source projects, it would not have been possible to make MARENOL what it is today, thank you!

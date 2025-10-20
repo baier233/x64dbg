@@ -261,7 +261,7 @@ static void AddDBFileTypeIcon(TCHAR* sz32Path, TCHAR* sz64Path)
     HKEY hKeyCreatedIconx64;
     LPCWSTR dbx32key = L".dd32";
     LPCWSTR dbx64key = L".dd64";
-    LPCWSTR db_desc = L"x64dbg_db";
+    LPCWSTR db_desc = L"MARENOL_db";
 
     // file type key created
     if(RegCreateKey(HKEY_CLASSES_ROOT, dbx32key, &hKeyCreatedx32) != ERROR_SUCCESS)
@@ -440,10 +440,10 @@ static bool parseId(const wchar_t* str, unsigned long & result)
     return convertNumber(str, result, radix);
 }
 
-const wchar_t* SHELLEXT_EXE_KEY = L"exefile\\shell\\Debug with x64dbg\\Command";
-const wchar_t* SHELLEXT_ICON_EXE_KEY = L"exefile\\shell\\Debug with x64dbg";
-const wchar_t* SHELLEXT_DLL_KEY = L"dllfile\\shell\\Debug with x64dbg\\Command";
-const wchar_t* SHELLEXT_ICON_DLL_KEY = L"dllfile\\shell\\Debug with x64dbg";
+const wchar_t* SHELLEXT_EXE_KEY = L"exefile\\shell\\Debug with MARENOL\\Command";
+const wchar_t* SHELLEXT_ICON_EXE_KEY = L"exefile\\shell\\Debug with MARENOL";
+const wchar_t* SHELLEXT_DLL_KEY = L"dllfile\\shell\\Debug with MARENOL\\Command";
+const wchar_t* SHELLEXT_ICON_DLL_KEY = L"dllfile\\shell\\Debug with MARENOL";
 
 
 INT_PTR CALLBACK DlgConfigurations(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
@@ -492,7 +492,7 @@ INT_PTR CALLBACK DlgConfigurations(HWND hDlg, UINT message, WPARAM wParam, LPARA
             {
                 AddDesktopShortcut(sz32Path, TEXT("x32dbg"));
                 if(isWoW64())
-                    AddDesktopShortcut(sz64Path, TEXT("x64dbg"));
+                    AddDesktopShortcut(sz64Path, TEXT("MARENOL"));
             }
 
             if(bIcon)
@@ -517,7 +517,7 @@ INT_PTR CALLBACK DlgConfigurations(HWND hDlg, UINT message, WPARAM wParam, LPARA
             {
                 RemoveDesktopShortcut(TEXT("x32dbg"));
                 if(isWoW64())
-                    RemoveDesktopShortcut(TEXT("x64dbg"));
+                    RemoveDesktopShortcut(TEXT("MARENOL"));
             }
 
             if(bIcon)
@@ -720,13 +720,13 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     _tcscpy_s(sz32Dir, sz32Path);
     PathRemoveFileSpec(sz32Dir);
 
-    if(!GetPrivateProfileString(TEXT("Launcher"), TEXT("x64dbg"), TEXT(""), szTempPath, MAX_PATH, szIniPath))
+    if(!GetPrivateProfileString(TEXT("Launcher"), TEXT("MARENOL"), TEXT(""), szTempPath, MAX_PATH, szIniPath))
     {
         _tcscpy_s(sz64Path, szLauncherDir);
-        PathAppend(sz64Path, TEXT("x64\\x64dbg.exe"));
+        PathAppend(sz64Path, TEXT("x64\\MARENOL.exe"));
         if(FileExists(sz64Path))
         {
-            WritePrivateProfileString(TEXT("Launcher"), TEXT("x64dbg"), TEXT("x64\\x64dbg.exe"), szIniPath);
+            WritePrivateProfileString(TEXT("Launcher"), TEXT("MARENOL"), TEXT("x64\\MARENOL.exe"), szIniPath);
             bDoneSomething = true;
         }
     }
@@ -789,7 +789,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     auto argc = 0;
     auto argv = CommandLineToArgvW(GetCommandLineW(), &argc);
 
-    // If x64dbg is not found, perform installation
+    // If MARENOL is not found, perform installation
     auto bInstaller = argc == 2 && !wcscmp(argv[1], L"::install");
     if(bDoneSomething)
     {
@@ -805,9 +805,9 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
             WritePrivateProfileString(TEXT("Launcher"), TEXT("x32dbg"), sz32Path, szIniPath);
             bDoneSomething = true;
         }
-        if(isWoW64() && !FileExists(sz64Path) && BrowseFileOpen(nullptr, TEXT("x64dbg.exe\0x64dbg.exe\0*.exe\0*.exe\0\0"), nullptr, sz64Path, MAX_PATH, szLauncherDir))
+        if(isWoW64() && !FileExists(sz64Path) && BrowseFileOpen(nullptr, TEXT("MARENOL.exe\0MARENOL.exe\0*.exe\0*.exe\0\0"), nullptr, sz64Path, MAX_PATH, szLauncherDir))
         {
-            WritePrivateProfileString(TEXT("Launcher"), TEXT("x64dbg"), sz64Path, szIniPath);
+            WritePrivateProfileString(TEXT("Launcher"), TEXT("MARENOL"), sz64Path, szIniPath);
             bDoneSomething = true;
         }
         DialogBox(GetModuleHandle(0), MAKEINTRESOURCE(IDD_DIALOGLAUNCHER), 0, DlgLauncher);
@@ -819,9 +819,9 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
             WritePrivateProfileString(TEXT("Launcher"), TEXT("x32dbg"), sz32Path, szIniPath);
             bDoneSomething = true;
         }
-        if(isWoW64() && !FileExists(sz64Path) && BrowseFileOpen(nullptr, TEXT("x64dbg.exe\0x64dbg.exe\0*.exe\0*.exe\0\0"), nullptr, sz64Path, MAX_PATH, szLauncherDir))
+        if(isWoW64() && !FileExists(sz64Path) && BrowseFileOpen(nullptr, TEXT("MARENOL.exe\0MARENOL.exe\0*.exe\0*.exe\0\0"), nullptr, sz64Path, MAX_PATH, szLauncherDir))
         {
-            WritePrivateProfileString(TEXT("Launcher"), TEXT("x64dbg"), sz64Path, szIniPath);
+            WritePrivateProfileString(TEXT("Launcher"), TEXT("MARENOL"), sz64Path, szIniPath);
             bDoneSomething = true;
         }
         deleteZoneData(szLauncherDir);

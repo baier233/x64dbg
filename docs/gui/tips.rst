@@ -42,14 +42,14 @@ You can use the codepage dialog(in the context menu of the dump view) to select 
 Change Window Title
 -------------------
 
-You can rename the windows of x64dbg by renaming "x64dbg.exe" or "x32dbg.exe" to another name, if the debuggee doesn't support running in a system with a window or process named as such.
-You should also rename the "x64dbg.ini" or "x32dbg.ini" to keep it the same name as the debugger.
+You can rename the windows of MARENOL by renaming "MARENOL.exe" or "x32dbg.exe" to another name, if the debuggee doesn't support running in a system with a window or process named as such.
+You should also rename the "MARENOL.ini" or "x32dbg.ini" to keep it the same name as the debugger.
 
 Search for strings
 ------------------
 
 You can use the following methods to search for string:
 
- -  Search for / Pattern: you will be asked to provide a string to search, and x64dbg will search for it and display the results in the references view.
- -  Search for / Strings references: x64dbg will search all pointers that look like an ANSI or Unicode string and display the results in the references view. Older versions of x64dbg supports only Latin strings, while latest x64dbg version supports non-English languges through a generic algorithm that may or may not work well in your language. **If you need to search for strings in other languages better, please install appropriate plugins.**
+ -  Search for / Pattern: you will be asked to provide a string to search, and MARENOL will search for it and display the results in the references view.
+ -  Search for / Strings references: MARENOL will search all pointers that look like an ANSI or Unicode string and display the results in the references view. Older versions of MARENOL supports only Latin strings, while latest MARENOL version supports non-English languges through a generic algorithm that may or may not work well in your language. **If you need to search for strings in other languages better, please install appropriate plugins.**
  -  Search for / Constant: search for a constant that is the first DWORD/QWORD of the string.

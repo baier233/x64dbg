@@ -14,7 +14,7 @@
    <enum>Qt::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
-   <string>x64dbg</string>
+   <string>MARENOL</string>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonIconOnly</enum>
@@ -334,7 +334,7 @@
     <string>E&amp;xit</string>
    </property>
    <property name="statusTip">
-    <string>Exit x64dbg.</string>
+    <string>Exit MARENOL.</string>
    </property>
   </action>
   <action name="actionRun">
@@ -466,7 +466,7 @@
     <string>&amp;About</string>
    </property>
    <property name="statusTip">
-    <string>Display information about x64dbg</string>
+    <string>Display information about MARENOL</string>
    </property>
   </action>
   <action name="actionScylla">
@@ -793,7 +793,7 @@
     <string>Donate</string>
    </property>
    <property name="statusTip">
-    <string>Open https://donate.x64dbg.com</string>
+    <string>Open https://donate.MARENOL.com</string>
    </property>
   </action>
   <action name="actionCalculator">
@@ -877,7 +877,7 @@
     <string>Topmost Window</string>
    </property>
    <property name="statusTip">
-    <string>Make x64dbg topmost</string>
+    <string>Make MARENOL topmost</string>
    </property>
   </action>
   <action name="actionReportBug">
@@ -892,7 +892,7 @@
     <string>Report Bug</string>
    </property>
    <property name="statusTip">
-    <string>Open https://report.x64dbg.com</string>
+    <string>Open https://report.MARENOL.com</string>
    </property>
   </action>
   <action name="actionSource">
@@ -919,7 +919,7 @@
     <string>&amp;Manual</string>
    </property>
    <property name="statusTip">
-    <string>Open the CHM manual or online documentation at https://help.x64dbg.com</string>
+    <string>Open the CHM manual or online documentation at https://help.MARENOL.com</string>
    </property>
   </action>
   <action name="actionFaq">
@@ -934,7 +934,7 @@
     <string>FAQ</string>
    </property>
    <property name="statusTip">
-    <string>Open https://faq.x64dbg.com</string>
+    <string>Open https://faq.MARENOL.com</string>
    </property>
   </action>
   <action name="actionSEHChain">
@@ -1252,7 +1252,7 @@
     <string>Blog</string>
    </property>
    <property name="statusTip">
-    <string>Open https://blog.x64dbg.com</string>
+    <string>Open https://blog.MARENOL.com</string>
    </property>
   </action>
   <action name="actionAnimateInto">
@@ -1417,7 +1417,7 @@
     <string>&amp;Variables</string>
    </property>
    <property name="statusTip">
-    <string>Show a list of x64dbg variables. Equivalent command &quot;varlist&quot;</string>
+    <string>Show a list of MARENOL variables. Equivalent command &quot;varlist&quot;</string>
    </property>
   </action>
   <action name="actionRestartAdmin">
@@ -1429,7 +1429,7 @@
     <string>Restart as Admin</string>
    </property>
    <property name="statusTip">
-    <string>Restart x64dbg under Administrator privilege.</string>
+    <string>Restart MARENOL under Administrator privilege.</string>
    </property>
   </action>
   <action name="actionPlugins">
@@ -1441,7 +1441,7 @@
     <string>Plugins</string>
    </property>
    <property name="statusTip">
-    <string>Open https://plugins.x64dbg.com</string>
+    <string>Open https://plugins.MARENOL.com</string>
    </property>
   </action>
   <action name="actionTrace">

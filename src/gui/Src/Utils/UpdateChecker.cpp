@@ -142,7 +142,7 @@ static std::string httpGet(const char* url,
 UpdateChecker::UpdateChecker(QWidget* parent)
     : QThread(parent)
     , mParent(parent)
-    , mUserAgent("x64dbg " + ToDateString(GetCompileDate()) + " " __TIME__)
+    , mUserAgent("MARENOL " + ToDateString(GetCompileDate()) + " " __TIME__)
 {
     connect(this, &UpdateChecker::updateCheckFinished, this, &UpdateChecker::finishedSlot);
 
@@ -172,7 +172,7 @@ void UpdateChecker::checkForUpdates()
 
 void UpdateChecker::run()
 {
-    std::string result = httpGet("https://update.x64dbg.com/releases.json",
+    std::string result = httpGet("https://update.MARENOL.com/releases.json",
                                  mUserAgent.toUtf8().constData(), 3000);
     emit updateCheckFinished(QString::fromStdString(result));
 }
@@ -210,11 +210,11 @@ void UpdateChecker::finishedSlot(const QString & json)
                 QString info;
                 if(publishedDate < buildDate)
                 {
-                    info = QString(tr("You have a development build (%1) of x64dbg!")).arg(ToDateString(buildDate));
+                    info = QString(tr("You have a development build (%1) of MARENOL!")).arg(ToDateString(buildDate));
                 }
                 else
                 {
-                    info = tr("You have the latest build (%1) of x64dbg!").arg(ToDateString(buildDate));
+                    info = tr("You have the latest build (%1) of MARENOL!").arg(ToDateString(buildDate));
                 }
                 GuiAddStatusBarMessage((info + "\n").toUtf8().constData());
                 SimpleInfoBox(mParent, tr("Information"), info);
@@ -230,7 +230,7 @@ void UpdateChecker::finishedSlot(const QString & json)
                 break;
             }
 
-            label = tr("<p><b>New x64dbg version available</b>: <a href=\"%1\">%2</a></p>").arg(downloadUrl, tagName);
+            label = tr("<p><b>New MARENOL version available</b>: <a href=\"%1\">%2</a></p>").arg(downloadUrl, tagName);
             GuiAddLogMessageHtml((label + "\n").toUtf8().constData());
         }
 
@@ -250,7 +250,7 @@ void UpdateChecker::finishedSlot(const QString & json)
     }
 
     mReleaseNotes->move(mParent->frameGeometry().center() - mReleaseNotes->rect().center());
-    mReleaseNotes->setMarkdown(markdown, "https://github.com/x64dbg/x64dbg/issues/");
+    mReleaseNotes->setMarkdown(markdown, "https://github.com/MARENOL/MARENOL/issues/");
     mReleaseNotes->setLabel(label);
     mReleaseNotes->exec();
 }

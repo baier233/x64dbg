@@ -12,7 +12,7 @@ This function has no parameters.
 
 ## Return Value
 
-This function returns true if x64dbg is currently debugging, or false otherwise.
+This function returns true if MARENOL is currently debugging, or false otherwise.
 
 ## Example
 

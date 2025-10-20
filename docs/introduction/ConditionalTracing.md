@@ -1,10 +1,10 @@
 # Conditional Tracing
 
-This section describes the [conditional tracing](../commands/tracing/index.rst) capability in x64dbg.
+This section describes the [conditional tracing](../commands/tracing/index.rst) capability in MARENOL.
 
 ## Operations overview
 
-When a trace step is hit, x64dbg will do the following things:
+When a trace step is hit, MARENOL will do the following things:
 
 - Increment the *trace counter*;
 - Set the system variable `$tracecounter` to the value of *trace counter*;
@@ -23,13 +23,13 @@ When a trace step is hit, x64dbg will do the following things:
   - Print the standard log message; 
   - Break the debuggee and wait for the user to resume.
 
-In addition to the above operations, x64dbg also has the ability to record traced instructions to the trace view and to update the trace coverage. This happens every time the debugger steps or pauses, also if you do it manually.
+In addition to the above operations, MARENOL also has the ability to record traced instructions to the trace view and to update the trace coverage. This happens every time the debugger steps or pauses, also if you do it manually.
 
 **Warning: All numbers in expressions are interpreted as hex by default!** For decimal use `.123`.
 
 ## Logging
 
-The log can be formatted by x64dbg to log the current state of the program. See [formatting](./Formatting.md) on how to format the log string. If you are looking for logging the address and disassembly of all instructions traced you can use `{p:cip} {i:cip}`. To redirect the log to a file use [TraceSetLogFile](../commands/tracing/TraceSetLogFile.md), or use the graphical interface.
+The log can be formatted by MARENOL to log the current state of the program. See [formatting](./Formatting.md) on how to format the log string. If you are looking for logging the address and disassembly of all instructions traced you can use `{p:cip} {i:cip}`. To redirect the log to a file use [TraceSetLogFile](../commands/tracing/TraceSetLogFile.md), or use the graphical interface.
 
 ## Trace coverage
 

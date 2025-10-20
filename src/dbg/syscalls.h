@@ -2,7 +2,7 @@
 
 #include <ntdll/ntdll.h>
 
-// https://github.com/x64dbg/ScyllaHide/blob/6817d32581b7a420322f34e36b1a1c8c3e4b434c/Scylla/Win32kSyscalls.h
+// https://github.com/MARENOL/ScyllaHide/blob/6817d32581b7a420322f34e36b1a1c8c3e4b434c/Scylla/Win32kSyscalls.h
 
 /*
  * The tables below were generated for each OS version using a modified version of wscg64 (https://github.com/hfiref0x/SyscallTables).

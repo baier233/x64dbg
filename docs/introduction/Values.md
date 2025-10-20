@@ -20,7 +20,7 @@ Floating-point registers like XMM0, YMM0, ZMM0, K0 or ST(0) may not be used as v
 
 - The variable names for most registers are the same as the names for them, except for the following registers: 
  - **x87 Control Word Flag**: The flags for this register is named like this: `_x87CW_UM`
-- In addition to the registers in the architecture, x64dbg provides the following registers: `CAX` , `CBX` , `CCX` , `CDX` , `CSP` , `CBP` , `CSI` , `CDI` , `CIP`. These registers are mapped to 32-bit registers on 32-bit platform, and to 64-bit registers on 64-bit platform. For example, `CIP` is `EIP` on 32-bit platform, and is `RIP` on 64-bit platform. This feature is intended to support architecture-independent code.
+- In addition to the registers in the architecture, MARENOL provides the following registers: `CAX` , `CBX` , `CCX` , `CDX` , `CSP` , `CBP` , `CSI` , `CDI` , `CIP`. These registers are mapped to 32-bit registers on 32-bit platform, and to 64-bit registers on 64-bit platform. For example, `CIP` is `EIP` on 32-bit platform, and is `RIP` on 64-bit platform. This feature is intended to support architecture-independent code.
 
 ## Flags
 

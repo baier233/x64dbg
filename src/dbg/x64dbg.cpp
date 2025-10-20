@@ -1,5 +1,5 @@
 /**
- @file x64dbg.cpp
+ @file MARENOL.cpp
 
  @brief Implements the 64 debug class.
  */
@@ -485,7 +485,7 @@ static void registercommands()
     dbgcmdnew("mnemonicbrief", cbInstrMnemonicbrief, false); //mnemonic brief
 
     dbgcmdnew("config", cbInstrConfig, false); //get or set config uint
-    dbgcmdnew("restartadmin,runas,adminrestart", cbInstrRestartadmin, false); //restart x64dbg as administrator
+    dbgcmdnew("restartadmin,runas,adminrestart", cbInstrRestartadmin, false); //restart MARENOL as administrator
 
     //undocumented
     dbgcmdnew("bench", cbDebugBenchmark, true); //benchmark test (readmem etc)
@@ -706,7 +706,7 @@ public:
     String commandFile;
     bool help = false;
 
-    CommandlineArguments() : ArgumentParser(ArchValue("x32dbg", "x64dbg"))
+    CommandlineArguments() : ArgumentParser(ArchValue("x32dbg", "MARENOL"))
     {
         addPositional("filename", filename, "Filename of program to debug.");
         addExtra(arguments);

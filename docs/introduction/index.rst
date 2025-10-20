@@ -1,7 +1,7 @@
 Introduction
 ============
 
-This section explains the basics of x64dbg. **Make sure to fully read this!**
+This section explains the basics of MARENOL. **Make sure to fully read this!**
 
 **Contents:**
 

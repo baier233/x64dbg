@@ -64,7 +64,7 @@ Opens the patch dialog. You can view your patches and apply the patch to a file 
 Restart as Admin
 ----------------
 
-It will restart x64dbg and the current debuggee with administrator privilege.
+It will restart MARENOL and the current debuggee with administrator privilege.
 
 ----
 Exit

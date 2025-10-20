@@ -138,12 +138,12 @@ struct MODINFO
         GuiInvalidateSymbolSource(base);
     }
 
-    bool loadSymbols(const String & pdbPath, bool forceLoad);
+    bool loadSymbols(const String& pdbPath, bool forceLoad);
     void unloadSymbols();
     void unmapFile();
     const MODEXPORT* findExport(duint rva) const;
     const MODIMPORT* findImport(duint iatRva) const;
-    duint getProcAddress(const String & name, int maxForwardDepth = 10) const;
+    duint getProcAddress(const String& name, int maxForwardDepth = 10) const;
 };
 
 ULONG64 ModRvaToOffset(ULONG64 base, PIMAGE_NT_HEADERS ntHeaders, ULONG64 rva);
@@ -171,15 +171,15 @@ int ModPathFromName(const char* Module, char* Path, int Size);
 /// A shared lock on the modules is held until this function returns.
 /// </summary>
 /// <param name="cbEnum">Enumeration function.</param>
-void ModEnum(const std::function<void(const MODINFO &)> & cbEnum);
+void ModEnum(const std::function<void(const MODINFO&)>& cbEnum);
 
 MODULEPARTY ModGetParty(duint Address);
 void ModSetParty(duint Address, MODULEPARTY Party);
 void ModCacheSave(JSON root);
 void ModCacheLoad(JSON root);
 void ModCacheClear();
-bool ModRelocationsFromAddr(duint Address, std::vector<MODRELOCATIONINFO> & Relocations);
+bool ModRelocationsFromAddr(duint Address, std::vector<MODRELOCATIONINFO>& Relocations);
 bool ModRelocationAtAddr(duint Address, MODRELOCATIONINFO* Relocation);
-bool ModRelocationsInRange(duint Address, duint Size, std::vector<MODRELOCATIONINFO> & Relocations);
+bool ModRelocationsInRange(duint Address, duint Size, std::vector<MODRELOCATIONINFO>& Relocations);
 
 #endif // _MODULE_H

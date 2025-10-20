@@ -202,7 +202,7 @@ void StackEntryFromFrame(CALLSTACKENTRY* Entry, duint Address, duint From, duint
     Entry->from = From;
     Entry->to = To;
 
-    /* https://github.com/x64dbg/x64dbg/pull/1478
+    /* https://github.com/MARENOL/MARENOL/pull/1478
     char returnToAddr[MAX_LABEL_SIZE] = "";
     getSymAddrName(To, returnToAddr);
     char returnFromAddr[MAX_LABEL_SIZE] = "";

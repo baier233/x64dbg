@@ -1,6 +1,6 @@
 # BridgeAlloc
 
-Allocate a memory buffer for use by x64dbg. The memory is freed by [BridgeFree](./BridgeFree.md).
+Allocate a memory buffer for use by MARENOL. The memory is freed by [BridgeFree](./BridgeFree.md).
 
 ```c++
 void* BridgeAlloc(
@@ -14,7 +14,7 @@ void* BridgeAlloc(
 
 ## Return Value
 
-Returns a pointer to the memory block allocated. If an error occurs allocating memory, then x64dbg is closed down.
+Returns a pointer to the memory block allocated. If an error occurs allocating memory, then MARENOL is closed down.
 
 ## Example
 

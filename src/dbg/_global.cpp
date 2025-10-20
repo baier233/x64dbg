@@ -11,12 +11,12 @@
 #include "DeviceNameResolver/DeviceNameResolver.h"
 
 /**
-\brief x64dbg library instance.
+\brief MARENOL library instance.
 */
 HINSTANCE hInst;
 
 /**
-\brief Number of allocated buffers by emalloc(). This should be 0 when x64dbg ends.
+\brief Number of allocated buffers by emalloc(). This should be 0 when MARENOL ends.
 */
 static int emalloc_count = 0;
 #ifdef ENABLE_MEM_TRACE
@@ -303,13 +303,13 @@ bool settingboolget(const char* section, const char* name, bool defaultValue)
 }
 
 /**
-\brief Query if x64dbg is running in Wow64 mode.
+\brief Query if MARENOL is running in Wow64 mode.
 \return true if running in Wow64, false otherwise.
 */
 bool IsWow64()
 {
     BOOL bIsWow64Process = FALSE;
-    //x64dbg supports WinXP SP3 and later only, so ignore the GetProcAddress crap :D
+    //MARENOL supports WinXP SP3 and later only, so ignore the GetProcAddress crap :D
     IsWow64Process(GetCurrentProcess(), &bIsWow64Process);
     return !!bIsWow64Process;
 }

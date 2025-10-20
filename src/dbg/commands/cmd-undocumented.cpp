@@ -345,7 +345,7 @@ bool cbInstrVisualize(int argc, char* argv[])
         return false;
     }
     //actual algorithm
-    //make sure to set these options in the INI (rest the default theme of x64dbg):
+    //make sure to set these options in the INI (rest the default theme of MARENOL):
     //DisassemblyBookmarkBackgroundColor = #00FFFF
     //DisassemblyBookmarkColor = #000000
     //DisassemblyHardwareBreakpointBackgroundColor = #00FF00

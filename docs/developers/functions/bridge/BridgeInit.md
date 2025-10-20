@@ -1,6 +1,6 @@
 # BridgeInit
 
-Initializes the Bridge, defines the .ini file used for x64dbg and loads the main GUI and Debug functions. **Internal function, don't use!**
+Initializes the Bridge, defines the .ini file used for MARENOL and loads the main GUI and Debug functions. **Internal function, don't use!**
 
 ```c++
 const wchar_t* BridgeInit();

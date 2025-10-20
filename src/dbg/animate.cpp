@@ -9,13 +9,13 @@ HANDLE hAnimateThread = nullptr;
 static DWORD WINAPI animateThread(void* arg1)
 {
     auto ignoreError = settingboolget("Misc", "AnimateIgnoreError", false);
-    while(animate_command[0] != 0)
+    while (animate_command[0] != 0)
     {
         auto beforeTime = GetTickCount();
-        if(!cmddirectexec(animate_command) && !ignoreError)
+        if (!cmddirectexec(animate_command) && !ignoreError)
             break;
         auto currentTime = GetTickCount();
-        if(currentTime < (beforeTime + animate_interval))
+        if (currentTime < (beforeTime + animate_interval))
         {
             Sleep(beforeTime + animate_interval - currentTime);
         }
@@ -29,11 +29,11 @@ static DWORD WINAPI animateThread(void* arg1)
 
 bool dbganimatecommand(const char* command)
 {
-    if(command) // Animate command
+    if (command) // Animate command
     {
         GuiAddStatusBarMessage(GuiTranslateText(QT_TRANSLATE_NOOP("DBG", "Animation started. Use the \"pause\" command to stop animation.")));
         strcpy_s(animate_command, command);
-        if(hAnimateThread == nullptr)
+        if (hAnimateThread == nullptr)
         {
             hAnimateThread = CreateThread(NULL, 0, animateThread, nullptr, 0, nullptr);
         }

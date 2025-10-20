@@ -2349,7 +2349,7 @@ bool Disassembly::followInstruction(duint rva)
         gotoAddress(dest);
         return true;
     }
-#ifdef X64DBG
+#ifdef MARENOL
     // Follow memory operand in dump
     DISASM_INSTR instr;
     DbgDisasmAt(rvaToVa(rva), &instr);
@@ -2386,6 +2386,6 @@ bool Disassembly::followInstruction(duint rva)
             }
         }
     }
-#endif // X64DBG
+#endif // MARENOL
     return false;
 }

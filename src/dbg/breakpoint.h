@@ -56,7 +56,7 @@ bool BpNewDll(const char* module, bool Enable, bool Singleshot, DWORD TitanType,
 bool BpGet(duint Address, BP_TYPE Type, const char* Name, BREAKPOINT* Bp);
 bool BpGetAny(BP_TYPE Type, const char* Name, BREAKPOINT* Bp);
 bool BpDelete(duint Address, BP_TYPE Type);
-bool BpDelete(const BREAKPOINT & Bp);
+bool BpDelete(const BREAKPOINT& Bp);
 bool BpEnable(duint Address, BP_TYPE Type, bool Enable);
 bool BpSetName(duint Address, BP_TYPE Type, const char* Name);
 bool BpSetTitanType(duint Address, BP_TYPE Type, int TitanType);
@@ -79,22 +79,22 @@ void BpToBridge(const BREAKPOINT* Bp, BRIDGEBP* BridgeBp);
 void BpCacheSave(JSON Root);
 void BpCacheLoad(JSON Root, bool migrateCommandCondition);
 void BpClear();
-void BpLogFileAcquire(const std::string & logFile);
-void BpLogFileRelease(const std::string & logFile);
-HANDLE BpLogFileOpen(const std::string & logFile);
+void BpLogFileAcquire(const std::string& logFile);
+void BpLogFileRelease(const std::string& logFile);
+HANDLE BpLogFileOpen(const std::string& logFile);
 void BpLogFileFlush();
 
 // New breakpoint API
 
 std::vector<BP_REF> BpRefList();
-bool BpRefVa(BP_REF & Ref, BPXTYPE Type, duint Va);
-bool BpRefRva(BP_REF & Ref, BPXTYPE Type, const char* Module, duint Rva);
-void BpRefDll(BP_REF & Ref, const char* Module);
-void BpRefException(BP_REF & Ref, unsigned int ExceptionCode);
-bool BpRefExists(const BP_REF & Ref);
+bool BpRefVa(BP_REF& Ref, BPXTYPE Type, duint Va);
+bool BpRefRva(BP_REF& Ref, BPXTYPE Type, const char* Module, duint Rva);
+void BpRefDll(BP_REF& Ref, const char* Module);
+void BpRefException(BP_REF& Ref, unsigned int ExceptionCode);
+bool BpRefExists(const BP_REF& Ref);
 
-bool BpGetFieldNumber(const BP_REF & Ref, BP_FIELD Field, duint & Value);
-bool BpSetFieldNumber(const BP_REF & Ref, BP_FIELD Field, duint Value);
-bool BpGetFieldText(const BP_REF & Ref, BP_FIELD Field, std::string & Value);
-bool BpGetFieldText(const BP_REF & Ref, BP_FIELD Field, CBSTRING Callback, void* Userdata);
-bool BpSetFieldText(const BP_REF & Ref, BP_FIELD Field, const char* Value);
+bool BpGetFieldNumber(const BP_REF& Ref, BP_FIELD Field, duint& Value);
+bool BpSetFieldNumber(const BP_REF& Ref, BP_FIELD Field, duint Value);
+bool BpGetFieldText(const BP_REF& Ref, BP_FIELD Field, std::string& Value);
+bool BpGetFieldText(const BP_REF& Ref, BP_FIELD Field, CBSTRING Callback, void* Userdata);
+bool BpSetFieldText(const BP_REF& Ref, BP_FIELD Field, const char* Value);

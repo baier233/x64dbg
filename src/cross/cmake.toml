@@ -31,7 +31,7 @@ sources = [
     "minidump/*.qrc",
 ]
 link-libraries = [
-    "x64dbg::widgets",
+    "MARENOL::widgets",
     "httplib::httplib",
     "::linux-pe",
     "::udmp-parser",
@@ -46,7 +46,7 @@ sources = [
     "remote_table/*.qrc",
 ]
 link-libraries = [
-    "x64dbg::widgets",
+    "MARENOL::widgets",
     "nlohmann_json::nlohmann_json",
 ]
 
@@ -59,7 +59,7 @@ sources = [
 ]
 include-directories = ["release_notes"]
 link-libraries = [
-    "x64dbg::widgets",
+    "MARENOL::widgets",
 ]
 
 [target.hex_viewer]
@@ -71,7 +71,7 @@ sources = [
     "hex_viewer/*.qrc",
 ]
 link-libraries = [
-    "x64dbg::widgets",
+    "MARENOL::widgets",
     "::libpl",
     "::libpl-gen",
     "fmt::fmt-header-only",

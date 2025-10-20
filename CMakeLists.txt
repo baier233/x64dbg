@@ -32,15 +32,15 @@ if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
 endif()
 
 # Options
-option(X64DBG_BUILD_IN_TREE "" ON)
-option(X64DBG_RELEASE "" OFF)
+option(MARENOL_BUILD_IN_TREE "" ON)
+option(MARENOL_RELEASE "" OFF)
 
 # Variables
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 
 include("cmake/VSToolchain.cmake")
 
-project(x64dbg
+project(MARENOL
 	DESCRIPTION
 		"An open-source x64/x32 debugger for windows."
 )
@@ -481,7 +481,7 @@ endif()
 if(CMAKE_SIZEOF_VOID_P EQUAL 8) # x64
 	set_target_properties(dbg PROPERTIES
 		OUTPUT_NAME
-			x64dbg
+			MARENOL
 	)
 endif()
 
@@ -808,16 +808,16 @@ add_library(gui SHARED)
 target_sources(gui PRIVATE ${gui_SOURCES})
 source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${gui_SOURCES})
 
-if(X64DBG_RELEASE) # X64DBG_RELEASE
+if(MARENOL_RELEASE) # MARENOL_RELEASE
 	target_compile_definitions(gui PUBLIC
-		X64DBG_RELEASE
+		MARENOL_RELEASE
 	)
 endif()
 
 target_compile_definitions(gui PRIVATE
 	BUILD_LIB
 	NOMINMAX
-	X64DBG
+	MARENOL
 )
 
 target_include_directories(gui PRIVATE
@@ -1019,9 +1019,9 @@ endif()
 if(CMAKE_SIZEOF_VOID_P EQUAL 8) # x64
 	set_target_properties(exe PROPERTIES
 		OUTPUT_NAME
-			x64dbg
+			MARENOL
 		PDB_NAME
-			x64dbg_exe
+			MARENOL_exe
 	)
 endif()
 
@@ -1100,7 +1100,7 @@ if(CMAKE_SIZEOF_VOID_P EQUAL 4) # x86
 			ON
 	)
 
-	if(X64DBG_BUILD_IN_TREE) # X64DBG_BUILD_IN_TREE
+	if(MARENOL_BUILD_IN_TREE) # MARENOL_BUILD_IN_TREE
 		set_target_properties(launcher PROPERTIES
 			RUNTIME_OUTPUT_DIRECTORY
 				"${PROJECT_SOURCE_DIR}/bin"

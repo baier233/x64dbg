@@ -1,7 +1,7 @@
 # Exceptions
 
 This page contains a list of ignored exceptions. When a listed first-chance exception occurs,
-x64dbg will pass that exception to the debuggee without pausing.
+MARENOL will pass that exception to the debuggee without pausing.
 
 ## Add Range
 

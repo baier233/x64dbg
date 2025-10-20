@@ -1,6 +1,6 @@
 # GuiAddLogMessage
 
-Adds a message to the log. The message will be shown in the log window and on the status bar at the bottom of x64dbg. The message is shown in plain text. To show formatted message, use [GuiAddLogMessageHtml](./GuiAddLogMessageHtml.md).
+Adds a message to the log. The message will be shown in the log window and on the status bar at the bottom of MARENOL. The message is shown in plain text. To show formatted message, use [GuiAddLogMessageHtml](./GuiAddLogMessageHtml.md).
 
 ```c++
 void GuiAddLogMessage(

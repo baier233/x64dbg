@@ -411,12 +411,12 @@ void DbSetPath(const char* Directory, const char* ModulePath)
 
         auto checkWritable = [](const char* fileDir)
         {
-            auto testfile = StringUtils::Utf8ToUtf16(StringUtils::sprintf("%s\\%X.x64dbg", fileDir, GetTickCount()));
+            auto testfile = StringUtils::Utf8ToUtf16(StringUtils::sprintf("%s\\%X.MARENOL", fileDir, GetTickCount()));
             auto hFile = CreateFileW(testfile.c_str(), GENERIC_WRITE, 0, nullptr, CREATE_ALWAYS, 0, nullptr);
             if(hFile == INVALID_HANDLE_VALUE)
             {
                 String error = stringformatinline(StringUtils::sprintf("{winerror@%x}", GetLastError()));
-                dprintf(QT_TRANSLATE_NOOP("DBG", "Cannot write to the program directory (GetLastError() = %s), try running x64dbg as admin...\n"), error.c_str());
+                dprintf(QT_TRANSLATE_NOOP("DBG", "Cannot write to the program directory (GetLastError() = %s), try running MARENOL as admin...\n"), error.c_str());
                 return false;
             }
             CloseHandle(hFile);

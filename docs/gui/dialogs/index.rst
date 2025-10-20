@@ -1,7 +1,7 @@
 Dialogs
 =======
 
-This sections describes the dialogs in x64dbg graphical user interface.
+This sections describes the dialogs in MARENOL graphical user interface.
 
 **Contents:**
 

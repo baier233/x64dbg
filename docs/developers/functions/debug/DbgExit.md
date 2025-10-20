@@ -1,6 +1,6 @@
 # DbgExit
 
-Used by x64dbg GUI to send exit signal to debugger and close the debugger.
+Used by MARENOL GUI to send exit signal to debugger and close the debugger.
 
 ```c++
 void DbgExit()

@@ -206,7 +206,7 @@ bool TraceWidget::loadDump()
     auto estimatedGb = fileSize / 1024.0 / 1024.0 / 1024.0 * 10.0;
     if(estimatedGb > 0.2)
     {
-        auto message = tr("Enabling the trace dump can consume a lot of memory (max ~%1GiB for this trace) and freeze x64dbg for prolonged periods of time. This feature is still experimental, please report any bugs you encounter.").arg(estimatedGb, 0, 'f', 2);
+        auto message = tr("Enabling the trace dump can consume a lot of memory (max ~%1GiB for this trace) and freeze MARENOL for prolonged periods of time. This feature is still experimental, please report any bugs you encounter.").arg(estimatedGb, 0, 'f', 2);
         QMessageBox msg(QMessageBox::Warning, tr("Warning"), message, QMessageBox::Ok | QMessageBox::Cancel, this);
         msg.setWindowIcon(DIcon("exclamation"));
         msg.setWindowFlags(msg.windowFlags() & (~Qt::WindowContextHelpButtonHint));

@@ -74,7 +74,7 @@ set_property(GLOBAL PROPERTY AUTORCC_SOURCE_GROUP "Generated Files")
 set_property(GLOBAL PROPERTY AUTORCC_TARGETS_FOLDER "CMakePredefinedTargets")
 
 # Build to the right output directory
-if(X64DBG_BUILD_IN_TREE)
+if(MARENOL_BUILD_IN_TREE)
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
         set(OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin/x64$<$<CONFIG:Debug>:d>")
     else()

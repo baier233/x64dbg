@@ -49,7 +49,7 @@ typedef struct
 void showcommandlineerror(cmdline_error_t* cmdline_error);
 bool isCmdLineEmpty();
 char* getCommandLineArgs();
-void CmdLineCacheSave(JSON Root, const String & cacheFile);
+void CmdLineCacheSave(JSON Root, const String& cacheFile);
 void CmdLineCacheLoad(JSON Root);
 void copyCommandLine(const char* cmdLine);
 bool setCommandLine();

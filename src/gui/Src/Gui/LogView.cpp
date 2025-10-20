@@ -176,9 +176,9 @@ void LogView::hideEvent(QHideEvent* event)
 
 void LogView::handleLink(QWidget* parent, const QUrl & link)
 {
-    if(link.scheme() == "x64dbg")
+    if(link.scheme() == "MARENOL")
     {
-        // x64dbg:path#fragment
+        // MARENOL:path#fragment
         auto path = link.path();
         auto fragment = link.fragment(QUrl::FullyDecoded);
         if(path == "address" || path == "/address32" || path == "/address64")
@@ -216,7 +216,7 @@ void LogView::handleLink(QWidget* parent, const QUrl & link)
  * @brief linkify Add hyperlink HTML to the message where applicable.
  * @param msg The message passed by reference.
  * Url format:
- * x64dbg:// localhost                                                                                          /  address64 # address
+ * MARENOL:// localhost                                                                                          /  address64 # address
  * ^fixed    ^host(probably will be changed to PID + Host when remote debugging and child debugging are supported) ^token      ^parameter
  */
 #ifdef _WIN64
@@ -227,9 +227,9 @@ static QRegularExpression addressRegExp("([0-9A-Fa-f]{8})");
 void LogView::linkify(QString & msg)
 {
 #ifdef _WIN64
-    msg.replace(addressRegExp, "<a href=\"x64dbg://localhost/address64#\\1\">\\1</a>");
+    msg.replace(addressRegExp, "<a href=\"MARENOL://localhost/address64#\\1\">\\1</a>");
 #else //x86
-    msg.replace(addressRegExp, "<a href=\"x64dbg://localhost/address32#\\1\">\\1</a>");
+    msg.replace(addressRegExp, "<a href=\"MARENOL://localhost/address32#\\1\">\\1</a>");
 #endif //_WIN64
 }
 

@@ -24,7 +24,7 @@ Show PID in hexadecimal in the attach dialog. If not set, it will use decimal, j
 
 ## Enable Load/Save Tab Order
 
-Allow x64dbg to load and save tab order. If not set, x64dbg will always use the default tab order.
+Allow MARENOL to load and save tab order. If not set, MARENOL will always use the default tab order.
 
 ## Show Watch Labels in Side Bar
 
@@ -35,8 +35,8 @@ in the side bar for watched variables.
 
 ## Do not call SetForegroundWindow
 
-When a debug event occurs, x64dbg will focus itself so you can view the state of the debuggee. In some circumstances
-this might not be desired. This option can be used to tell x64dbg not to focus itself when a debug event occurs.
+When a debug event occurs, MARENOL will focus itself so you can view the state of the debuggee. In some circumstances
+this might not be desired. This option can be used to tell MARENOL not to focus itself when a debug event occurs.
 
 ## Show RVA addresses in graph view
 When enabled in graph view the offset addresses are shown in front of the disassembly.
@@ -50,7 +50,7 @@ Note: Press G on the CPU tab press G to open graph view
 
 When enabled the dialog
 "The debuggee is still running and will be terminated if you exit. Do you really want to exit?"
-is shown when you exit x64dbg but it's still attached to some process for debugging.
+is shown when you exit MARENOL but it's still attached to some process for debugging.
 
 ## Disable auto completion in goto dialog
 

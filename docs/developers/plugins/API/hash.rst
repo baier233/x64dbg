@@ -1,7 +1,7 @@
 ============
 _plugin_hash
 ============
-This function allows you to hash some data. It is used by x64dbg in various places.
+This function allows you to hash some data. It is used by MARENOL in various places.
 
 ::
 

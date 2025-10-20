@@ -1,8 +1,8 @@
 Bridge Functions 
 ================
-This section contains information about the Bridge functions of x64dbg.
+This section contains information about the Bridge functions of MARENOL.
 
-**Please note: Bridge functions are handled by x64dbg and should not normally be called by any third party program or plugin - they are included for documentation purposes.**
+**Please note: Bridge functions are handled by MARENOL and should not normally be called by any third party program or plugin - they are included for documentation purposes.**
 
 **Contents:**
 

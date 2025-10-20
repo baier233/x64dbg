@@ -78,7 +78,7 @@ static PeArch GetPeArch(const wchar_t* szFileName, uint32_t* entryPointRva = nul
                                     // https://mega.nz/#!vx5nVILR!jLafWGWhhsC0Qo5fE-3oEIc-uHBcRpraOo8L_KlUeXI
                                     // Binaries that do not have COMIMAGE_FLAGS_ILONLY appear to be executed
                                     // in a process that matches their native type.
-                                    // https://github.com/x64dbg/x64dbg/issues/1758
+                                    // https://github.com/MARENOL/MARENOL/issues/1758
 
                                     auto pcorh = PIMAGE_COR20_HEADER(ULONG_PTR(fileMap) + comAddr);
                                     if(pcorh->cb == sizeof(IMAGE_COR20_HEADER))

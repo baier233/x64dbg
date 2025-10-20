@@ -1,6 +1,6 @@
 # GuiAutoCompleteAddCmd
 
-Add a command to the auto-completion list of the command bar. This function is automatically called by x64dbg when a command is registered, therefore plugin developers do not need to call this function.
+Add a command to the auto-completion list of the command bar. This function is automatically called by MARENOL when a command is registered, therefore plugin developers do not need to call this function.
 
 ```c++
 void GuiAutoCompleteAddCmd(const char* cmd);

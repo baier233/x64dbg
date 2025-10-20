@@ -1,6 +1,6 @@
 GUI Functions 
 =============
-This section contains information about the Graphical User Interface GUI functions of x64dbg.
+This section contains information about the Graphical User Interface GUI functions of MARENOL.
 
 **Contents:**
 
