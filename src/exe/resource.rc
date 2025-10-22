@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// ·ÇÌØ¶¨ÓïÑÔ resources
+// ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½ resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
 LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
@@ -25,21 +25,21 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE 
+1 TEXTINCLUDE
 BEGIN
-    "resource.h\0"
+"resource.h\0"
 END
 
-2 TEXTINCLUDE 
+2 TEXTINCLUDE
 BEGIN
-    "#include ""winres.h""\r\n"
-    "\0"
+"#include ""winres.h""\r\n"
+"\0"
 END
 
-3 TEXTINCLUDE 
+3 TEXTINCLUDE
 BEGIN
-    "\r\n"
-    "\0"
+"\r\n"
+"\0"
 END
 
 #endif    // APSTUDIO_INVOKED
@@ -59,41 +59,41 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 0,0,2,5
- PRODUCTVERSION 0,0,2,5
- FILEFLAGSMASK 0x3fL
+FILEVERSION 0, 0, 2, 5
+PRODUCTVERSION 0, 0, 2, 5
+FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
- FILEFLAGS 0x1L
+FILEFLAGS 0x1L
 #else
- FILEFLAGS 0x0L
+FILEFLAGS 0x0L
 #endif
- FILEOS 0x40004L
- FILETYPE 0x0L
- FILESUBTYPE 0x0L
+FILEOS 0x40004L
+FILETYPE 0x0L
+FILESUBTYPE 0x0L
 BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "040904b0"
-        BEGIN
-            VALUE "FileDescription", "MARENOL"
-            VALUE "FileVersion", "0.0.2.5"
-            VALUE "LegalCopyright", "MARENOL.com"
-            VALUE "ProductName", "MARENOL"
-            VALUE "ProductVersion", "0.0.2.5"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x409, 1200
-    END
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904b0"
+BEGIN
+VALUE "FileDescription", "MARENOL"
+VALUE "FileVersion", "0.0.2.5"
+VALUE "LegalCopyright", "MARENOL.com"
+VALUE "ProductName", "MARENOL"
+VALUE "ProductVersion", "0.0.2.5"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x409, 1200
+END
 END
 
-#endif    // ·ÇÌØ¶¨ÓïÑÔ resources
+#endif    // ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½ resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+// ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½å£¬ï¿½Ð¹ï¿½) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -106,16 +106,16 @@ LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
 
 IDD_OPTIONS_DIALOG DIALOGEX 0, 0, 200, 120
 STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "ÅäÖÃ"
+CAPTION "ï¿½ï¿½ï¿½ï¿½"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "Ñ¡ÔñÒÔÏÂÄãÏë¸ü¸ÄµÄÅäÖÃ£º",IDC_STATIC,10,5,180,10
-    CONTROL         "ÓÒ¼ü²Ëµ¥¿ì½Ý·½Ê½",IDC_CHECK_SHELLEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,20,180,10
-    CONTROL         "×ÀÃæ¿ì½Ý·½Ê½",IDC_CHECK_DESKTOPSHORTCUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,40,180,10
-    CONTROL         "Êý¾Ý¿âÎÄ¼þÍ¼±ê",IDC_CHECK_ICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,60,180,10
-    DEFPUSHBUTTON   "°²×°",IDYES,20,90,50,14
-    PUSHBUTTON      "Ð¶ÔØ",IDNO,75,90,50,14
-    PUSHBUTTON      "È¡Ïû",IDCANCEL,130,90,50,14
+LTEXT           "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½Ã£ï¿½", IDC_STATIC, 10, 5, 180, 10
+CONTROL         "ï¿½Ò¼ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ý·ï¿½Ê½", IDC_CHECK_SHELLEXT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 20, 180, 10
+CONTROL         "ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½Ê½", IDC_CHECK_DESKTOPSHORTCUT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 40, 180, 10
+CONTROL         "ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½Ä¼ï¿½Í¼ï¿½ï¿½", IDC_CHECK_ICON, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 60, 180, 10
+DEFPUSHBUTTON   "ï¿½ï¿½×°", IDYES, 20, 90, 50, 14
+PUSHBUTTON      "Ð¶ï¿½ï¿½", IDNO, 75, 90, 50, 14
+PUSHBUTTON      "È¡ï¿½ï¿½", IDCANCEL, 130, 90, 50, 14
 END
 
 IDD_DIALOGLAUNCHER DIALOGEX 0, 0, 177, 28
@@ -123,9 +123,9 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Launcher"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "x32dbg",IDC_BUTTON32,7,7,50,14
-    PUSHBUTTON      "MARENOL",IDC_BUTTON64,63,7,50,14
-    PUSHBUTTON      "°²×°",IDC_BUTTONINSTALL,120,7,50,14
+PUSHBUTTON      "x32dbg", IDC_BUTTON32, 7, 7, 50, 14
+PUSHBUTTON      "MARENOL", IDC_BUTTON64, 63, 7, 50, 14
+PUSHBUTTON      "ï¿½ï¿½×°", IDC_BUTTONINSTALL, 120, 7, 50, 14
 END
 
 
@@ -137,17 +137,17 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO
 BEGIN
-    IDD_OPTIONS_DIALOG, DIALOG
-    BEGIN
-    END
+IDD_OPTIONS_DIALOG, DIALOG
+BEGIN
+END
 
-    IDD_DIALOGLAUNCHER, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 170
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 21
-    END
+IDD_DIALOGLAUNCHER, DIALOG
+BEGIN
+LEFTMARGIN, 7
+RIGHTMARGIN, 170
+TOPMARGIN, 7
+BOTTOMMARGIN, 21
+END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -159,20 +159,20 @@ END
 
 IDD_DIALOGLAUNCHER AFX_DIALOG_LAYOUT
 BEGIN
-    0
+0
 END
 
 IDD_OPTIONS_DIALOG AFX_DIALOG_LAYOUT
 BEGIN
-    0
+0
 END
 
-#endif    // ÖÐÎÄ(¼òÌå£¬ÖÐ¹ú) resources
+#endif    // ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½å£¬ï¿½Ð¹ï¿½) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// Ó¢Óï(ÃÀ¹ú) resources
+// Ó¢ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
@@ -188,9 +188,9 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Launcher"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "x32dbg",IDC_BUTTON32,7,7,50,14
-    PUSHBUTTON      "MARENOL",IDC_BUTTON64,63,7,50,14
-    PUSHBUTTON      "Setup",IDC_BUTTONINSTALL,120,7,50,14
+PUSHBUTTON      "x32dbg", IDC_BUTTON32, 7, 7, 50, 14
+PUSHBUTTON      "MARENOL", IDC_BUTTON64, 63, 7, 50, 14
+PUSHBUTTON      "Setup", IDC_BUTTONINSTALL, 120, 7, 50, 14
 END
 
 IDD_OPTIONS_DIALOG DIALOGEX 0, 0, 200, 120
@@ -198,13 +198,13 @@ STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "Configuration"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "Select the options you want to configure:",IDC_STATIC,10,5,180,10
-    CONTROL         "Context menu entries",IDC_CHECK_SHELLEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,20,180,10
-    CONTROL         "Desktop shortcuts",IDC_CHECK_DESKTOPSHORTCUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,40,180,10
-    CONTROL         "Database icons",IDC_CHECK_ICON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,60,180,10
-    DEFPUSHBUTTON   "Install",IDYES,20,90,50,14
-    PUSHBUTTON      "Uninstall",IDNO,75,90,50,14
-    PUSHBUTTON      "Cancel",IDCANCEL,130,90,50,14
+LTEXT           "Select the options you want to configure:", IDC_STATIC, 10, 5, 180, 10
+CONTROL         "Context menu entries", IDC_CHECK_SHELLEXT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 20, 180, 10
+CONTROL         "Desktop shortcuts", IDC_CHECK_DESKTOPSHORTCUT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 40, 180, 10
+CONTROL         "Database icons", IDC_CHECK_ICON, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 10, 60, 180, 10
+DEFPUSHBUTTON   "Install", IDYES, 20, 90, 50, 14
+PUSHBUTTON      "Uninstall", IDNO, 75, 90, 50, 14
+PUSHBUTTON      "Cancel", IDCANCEL, 130, 90, 50, 14
 END
 
 
@@ -216,17 +216,17 @@ END
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO
 BEGIN
-    IDD_DIALOGLAUNCHER, DIALOG
-    BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 170
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 21
-    END
+IDD_DIALOGLAUNCHER, DIALOG
+BEGIN
+LEFTMARGIN, 7
+RIGHTMARGIN, 170
+TOPMARGIN, 7
+BOTTOMMARGIN, 21
+END
 
-    IDD_OPTIONS_DIALOG, DIALOG
-    BEGIN
-    END
+IDD_OPTIONS_DIALOG, DIALOG
+BEGIN
+END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -238,10 +238,10 @@ END
 
 IDD_DIALOGLAUNCHER AFX_DIALOG_LAYOUT
 BEGIN
-    0
+0
 END
 
-#endif    // Ó¢Óï(ÃÀ¹ú) resources
+#endif    // Ó¢ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
